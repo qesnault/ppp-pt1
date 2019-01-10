@@ -2,72 +2,50 @@ var toutesLesQuestions = [
 
     {
 
-        intitule: "Vous dites",
+        intitule: "Il établit un diagnostic et propose une stratégie pour améliorer l’image et la réputation numérique de son client",
         reponses: {
-            rep1: ["L'internet", 21],
-            rep2: ["Internet", 45],
-            rep3: ["Google", 45]
+            rep1: ["Le modérateur", 0],
+            rep2: ["Le médecin du web", 0],
+            rep3: ["Le nettoyeur web", 1],
+            rep4: ["L'administrateur de réseaux", 0]
 
         }
 
     },
     {
-        intitule: "Petit.e vous jouyez avec",
+        intitule: "Il étudie la fiabilité du système d'information d'une entreprise et en assurer la sûreté :",
         reponses: {
-            rep1: ["Un baton (et vous étiez bien content.e)", 21],
-            rep2: ["Une console", 45],
-            rep3: ["Des playmobils", 55]
+            rep1: ["L'architecte réseau", 0],
+            rep2: ["Le gestionnaire de parc micro-informatique", 0],
+            rep3: ["Le policier informatique", 0],
+            rep4: ["L'expert en sécurité informatique", 1]
         }
     },
     {
-        intitule: "Tu connais wankil ?",
+        intitule: "Il trie et analyse des millions de données pour mieux connaître les pratiques et attentes des clients de l'entreprise :",
         reponses: {
-            rep1: ["Oui", 21],
-            rep2: ["Non", 45]
+            rep1: ["L'analyste fonctionnel", 0],
+            rep2: ["Le data scientist", 1],
+            rep3: ["Le policier informatique", 0],
+            rep4: ["L'expert en sécurité informatique", 0]
         }
     },
     {
-        intitule: "Votre PC (ordinateur) se met à bugger",
+        intitule: "Metteur en scène de l’image pour les films 3D, il conçoit ainsi tout ce qui constitue le champ visuel en intégrant les mouvements, les indications scéniques et même les décors :        ",
         reponses: {
-            rep1: ["Vous cherchez une solution par vous même", 21],
-            rep2: ["Vous appelez Timothé, votre petit fils", 45],
+            rep1: ["Le Layout Man", 1],
+            rep2: ["Réalisateur 3D", 0],
+            rep3: ["Dessinateur industriel", 0],
+            rep4: ["Dessinateur 3D", 0]
         }
-    },
-    {
-        intitule: "Ce questionnaire est-il trop petit ?",
-        reponses: {
-            rep1: ["J'ai mal aux yeux", 21],
-            rep2: ["Non", 45],
-        }
-    },
-
-    {
-        intitule: "Tu connais René Cotis ?",
-        reponses: {
-            rep1: ["Oui, il était chmpion d'escrime", 21],
-            rep2: ["Oui, il était président de la Républqiue", 45],
-            rep2: ["René qui ??", 45]
-
-
-        }
-    },
-
-    {
-        intitule: "Combien coutait le pain quand tu était petit.e ?",
-        reponses: {
-            rep1: ["1 euro", 21],
-            rep2: ["3 francs", 45],
-
-        }
-    },
-            //Répeter pour chaque question
-
-];//Répeter pour chaque question
+    } 
+];
 var n = 0;
 
 var somme = 0;
 
 function afficherQuestion() {
+    console.log("ets");
     var affichageHtml = [];
 
     affichageHtml.push('<h1>' + toutesLesQuestions[n].intitule + '</h1>');
@@ -82,6 +60,10 @@ function afficherQuestion() {
                 );
     }
     document.getElementById('form').innerHTML = affichageHtml.join("");
+}
+
+function montrerDetails(nb){
+
 }
 
 function finQuizz() {
@@ -105,3 +87,4 @@ function eventClick(ajout) {
         afficherQuestion();
     }
 }
+
