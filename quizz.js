@@ -44,37 +44,54 @@ var n = 0;
 
 var somme = 0;
 
-function afficherQuestion() {
-    console.log("ets");
+function htmlQuestion() {
     var affichageHtml = [];
 
     affichageHtml.push('<h1>' + toutesLesQuestions[n].intitule + '</h1>');
 
     for (var rep in toutesLesQuestions[n].reponses) {
         affichageHtml.push(
-                '<button name="boutonRep" onclick="eventClick('
+                '<button name="boutonRep" class="reponse'
+                + toutesLesQuestions[n].reponses[rep][1]
+                + '" onclick="eventClick('
                 + toutesLesQuestions[n].reponses[rep][1]
                 + ')">'
                 + toutesLesQuestions[n].reponses[rep][0]
                 + '</button>'
                 );
     }
-    document.getElementById('form').innerHTML = affichageHtml.join("");
+    return affichageHtml.join("");
+}
+
+function htmlReponse(){
+    var affichageHtml = [];
+
+    affichageHtml.push('<h1>' + toutesLesQuestions[n].intitule + '</h1>');
+
+    for (var rep in toutesLesQuestions[n].reponses) {
+        affichageHtml.push(
+                '<button name="boutonRep" id="reponse'
+                + toutesLesQuestions[n].reponses[rep][1]
+                + '" onclick="eventClick('
+                + toutesLesQuestions[n].reponses[rep][1]
+                + ')">'
+                + toutesLesQuestions[n].reponses[rep][0]
+                + '</button>'
+                );
+    }
+    return affichageHtml.join("");
 }
 
 function montrerDetails(nb){
 
 }
 
+function afficher(html){
+    document.getElementById('form').innerHTML = html;
+}
+
 function finQuizz() {
-    if (somme > 15) {
-        document.getElementById('form').innerHTML = ('<h1> Il me semblerait que vous depassiez l\'âge maximum pour utiliser ce chatbot en toute sécurité'
-                + 'un petit cours de rattrapage s\'impose...</h1>'
-                + '<button name="boutonRdr" onclick="document.location.href="""nouvellepage.html"""">Continuer</button>');
-    }else{
-        document.getElementById('form').innerHTML = ('<h1> Vous avez passez les tests avec succès et avez prouvé votre appartenance à la génération Y</h1>'
-                + '<button name="boutonRdr" onclick="document.location.href="""nouvellepage.html"""">Continuer</button>');
-    }
+    document.location.href = "reponses.html";
 }
 
 
@@ -84,7 +101,11 @@ function eventClick(ajout) {
     if (n >= toutesLesQuestions.length) {
         finQuizz();
     } else {
-        afficherQuestion();
+        afficher(htmlQuestion());
     }
+}
+
+function main(){
+    afficher(htmlQuestion());
 }
 
