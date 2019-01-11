@@ -1,3 +1,8 @@
+//Codé par Vadim Capatina, Léo Dupouey et Quentin Esnault à l'occasion de la nuit de l'informatique de bordeaux 2018
+//Mis à jour et adapté par Léo Dupouey dans le cardre de la réalisation su site web du PPP-PT1
+
+var n;
+var somme;
 var toutesLesQuestions = [
 
     {
@@ -40,9 +45,6 @@ var toutesLesQuestions = [
         }
     } 
 ];
-var n = 0;
-
-var somme = 0;
 
 function htmlQuestion() {
     var affichageHtml = [];
@@ -63,28 +65,9 @@ function htmlQuestion() {
     return affichageHtml.join("");
 }
 
-function htmlReponse(){
-    var affichageHtml = [];
 
-    affichageHtml.push('<h1>' + toutesLesQuestions[n].intitule + '</h1>');
 
-    for (var rep in toutesLesQuestions[n].reponses) {
-        affichageHtml.push(
-                '<button name="boutonRep" id="reponse'
-                + toutesLesQuestions[n].reponses[rep][1]
-                + '" onclick="eventClick('
-                + toutesLesQuestions[n].reponses[rep][1]
-                + ')">'
-                + toutesLesQuestions[n].reponses[rep][0]
-                + '</button>'
-                );
-    }
-    return affichageHtml.join("");
-}
 
-function montrerDetails(nb){
-
-}
 
 function afficher(html){
     document.getElementById('form').innerHTML = html;
@@ -106,6 +89,8 @@ function eventClick(ajout) {
 }
 
 function main(){
+    n = 0;
+    somme = 0;
     afficher(htmlQuestion());
 }
 
