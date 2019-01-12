@@ -7,7 +7,7 @@ var toutesLesQuestions = [
 
     {
 
-        intitule: "Il établit un diagnostic et propose une stratégie pour améliorer l’image et la réputation numérique de son client",
+        intitule: "Il établit un diagnostic et propose une stratégie pour améliorer l’image et la réputation numérique de son client :",
         reponses: {
             rep1: ["Le modérateur", 0],
             rep2: ["Le médecin du web", 0],
