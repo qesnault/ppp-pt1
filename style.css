@@ -2,7 +2,12 @@
 
 
 body{
-    background-color: black;
+    background-color: #443b5f;
+    color: #fbeed7;
+}
+
+a{
+    color : rgb(65, 168, 61);
 }
 
 header{
@@ -34,16 +39,16 @@ img{
 #quizz{
     display: flex;
     flex-direction: column;
-    text-align: center;
-    color: white;
 }
 
 
 .reponse{
-    background-color: white;
-    color: black;
-    min-height: 50px;
+    background-color: #fbeed7;
+    font-weight: 700;
+    color: #443b5f;
+    min-height: 60px;
     border-radius: 30px;
+    border-color: #ffba5a;
     flex : 1 1 0;
     width: 20%;
     min-width: 200px;
@@ -53,6 +58,15 @@ img{
 }
 
 .reponse:hover{
-    background-color: black;
-    color: white;
+    
+    color: #ff7657;
+    border-color: #ff7657;
+}
+
+h1, h2{
+    color: #ff7657;
+}
+
+h3{
+    color: #ffba5a;
 }
