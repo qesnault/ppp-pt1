@@ -1,0 +1,31 @@
+
+
+
+body{
+    background-color: black;
+}
+
+header{
+    width: 100%;
+}
+
+.media-body{
+    
+    background-image:-moz-linear-gradient(left, rgba(0, 0, 0, 0.5), black), url("img/jeune-fille-a-la-fenetre.jpg") ;  
+    overflow: hidden;
+}
+
+.media-body{
+   
+    display : table-cell;
+}
+.media-right{
+    display : table-cell;
+    
+        
+}   
+
+img{
+    align-self: center;
+   margin: 0% 0% 0% 0%;
+}
