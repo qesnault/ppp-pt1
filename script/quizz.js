@@ -49,12 +49,11 @@ var toutesLesQuestions = [
 function htmlQuestion() {
     var affichageHtml = [];
 
-    affichageHtml.push('<h1>' + toutesLesQuestions[n].intitule + '</h1>');
+    affichageHtml.push('<h3>' + toutesLesQuestions[n].intitule + '</h3>');
 
     for (var rep in toutesLesQuestions[n].reponses) {
         affichageHtml.push(
                 '<button name="boutonRep" class="reponse'
-                + toutesLesQuestions[n].reponses[rep][1]
                 + '" onclick="eventClick('
                 + toutesLesQuestions[n].reponses[rep][1]
                 + ')">'
@@ -70,7 +69,7 @@ function htmlQuestion() {
 
 
 function afficher(html){
-    document.getElementById('form').innerHTML = html;
+    document.getElementById('quizz').innerHTML = html;
 }
 
 function finQuizz() {
