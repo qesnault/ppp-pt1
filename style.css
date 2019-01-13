@@ -42,6 +42,7 @@ img{
 .reponse{
     background-color: white;
     color: black;
+    min-height: 50px;
     border-radius: 30px;
     flex : 1 1 0;
     width: 20%;
