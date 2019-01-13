@@ -5,7 +5,9 @@ body{
     background-color: #443b5f;
     color: #fbeed7;
 }
-
+p{
+    color: #fbeed7;
+}
 a{
     color : rgb(65, 168, 61);
 }
@@ -69,4 +71,13 @@ h1, h2{
 
 h3{
     color: #ffba5a;
+}
+nav{
+    background-color: #ffba5a;
+}
+header{
+    background-color: #ff7657;
+}
+header > div > div > h1{
+    color: white;
 }
