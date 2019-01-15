@@ -1,9 +1,8 @@
-
-
-
 body{
     background-color: #443b5f;
     color: #fbeed7;
+    overflow-x: hidden;
+    width : 100vw;
 }
 p{
     color: #fbeed7;
