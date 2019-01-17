@@ -8,36 +8,17 @@ p{
     color: #fbeed7;
 }
 a{
-    color : rgb(65, 168, 61);
+    color : rgb(141, 183, 211);
 }
 
 header{
     width: 100%;
 }
 
-.media-body{
-    
-    background-image:-moz-linear-gradient(left, rgba(0, 0, 0, 0.5), black), url("img/jeune-fille-a-la-fenetre.jpg") ;  
-    overflow: hidden;
-}
-
-.media-body{
-   
-    display : table-cell;
-}
-.media-right{
-    display : table-cell;
-    
-        
-}   
-
-
-
 #quizz{
     display: flex;
     flex-direction: column;
 }
-
 
 .reponse{
     background-color: #fbeed7;
@@ -61,37 +42,32 @@ header{
 }
 
 
-.apercu{
-    display: inline-block;
-    margin: 2% 10%
-}
 
 .home-container{
     padding: 2% 5%;
-
-
- 
 }
 
 .row{
     border-width: 5px;
     border-style: solid;
+    border-color: #ffba5a;
+    border-radius: 20px;
 }
 
-.home-container > div > div > *{
+.home-container > div > div > p{
     text-align: justify;
     font-size: 150%;
-    padding-top : auto;
+    display: inline-block;
+    margin: 2% 10%
 }
 
-
-img{
-    align-self: center;
-    padding: 2%;
-}
-
-.col-6{
+.home-image-container{
     margin: auto;
+    padding: 3%;
+}
+
+.home-text-container{
+    padding: 3%;
 }
 
 h1, h2{
