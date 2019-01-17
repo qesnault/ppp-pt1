@@ -18,7 +18,7 @@ var toutesLesQuestions = [
 
     },
     {
-        intitule: "Il étudie la fiabilité du système d'information d'une entreprise et en assurer la sûreté :",
+        intitule: "Il étudie la fiabilité du système d'information d'une entreprise et en assure la sûreté :",
         reponses: {
             rep1: ["L'architecte réseau", 0],
             rep2: ["Le gestionnaire de parc micro-informatique", 0],
@@ -29,19 +29,19 @@ var toutesLesQuestions = [
     {
         intitule: "Il trie et analyse des millions de données pour mieux connaître les pratiques et attentes des clients de l'entreprise :",
         reponses: {
-            rep1: ["L'analyste fonctionnel", 0],
+            rep1: ["L’analyste fonctionnel", 0],
             rep2: ["Le data scientist", 1],
-            rep3: ["Le policier informatique", 0],
-            rep4: ["L'expert en sécurité informatique", 0]
+            rep3: ["Le data Collector", 0],
+            rep4: ["Le modérateur", 0]
         }
     },
     {
         intitule: "Metteur en scène de l’image pour les films 3D, il conçoit ainsi tout ce qui constitue le champ visuel en intégrant les mouvements, les indications scéniques et même les décors :        ",
         reponses: {
             rep1: ["Le Layout Man", 1],
-            rep2: ["Réalisateur 3D", 0],
-            rep3: ["Dessinateur industriel", 0],
-            rep4: ["Dessinateur 3D", 0]
+            rep2: ["Le réalisateur 3D", 0],
+            rep3: ["Le dessinateur industriel", 0],
+            rep4: ["Le dessinateur 3D", 0]
         }
     } 
 ];
