@@ -31,11 +31,7 @@ header{
         
 }   
 
-img{
-    align-self: center;
-   margin: 0% 0% 0% 0%;
-   overflow: hidden;
-}
+
 
 #quizz{
     display: flex;
@@ -62,6 +58,40 @@ img{
     
     color: #ff7657;
     border-color: #ff7657;
+}
+
+
+.apercu{
+    display: inline-block;
+    margin: 2% 10%
+}
+
+.home-container{
+    padding: 2% 5%;
+
+
+ 
+}
+
+.row{
+    border-width: 5px;
+    border-style: solid;
+}
+
+.home-container > div > div > *{
+    text-align: justify;
+    font-size: 150%;
+    padding-top : auto;
+}
+
+
+img{
+    align-self: center;
+    padding: 2%;
+}
+
+.col-6{
+    margin: auto;
 }
 
 h1, h2{
