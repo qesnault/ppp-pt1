@@ -1,12 +1,16 @@
+/*global*/
+
 body{
     background-color: #443b5f;
     color: #fbeed7;
     overflow-x: hidden;
     width : 100vw;
 }
+
 p{
     color: #fbeed7;
 }
+
 a{
     color : rgb(141, 183, 211);
 }
@@ -18,37 +22,26 @@ a:hover{
 
 header{
     width: 100%;
+    background-color: #ff7657;
 }
 
-.img-article{
-    max-width: 700px;
+header > div > div > h1{
+    color: white;
 }
 
-#quizz{
-    display: flex;
-    flex-direction: column;
-}
-
-.reponse{
-    background-color: #fbeed7;
-    font-weight: 700;
-    color: #443b5f;
-    min-height: 70px;
-    border-radius: 30px;
-    border-color: #ffba5a;
-    flex : 1 1 0;
-    width: 20%;
-    min-width: 200px;
-    margin: auto;
-    margin-top: 2%;
-    padding : 10px 5px;
-}
-
-.reponse:hover{
-    
+h1, h2{
     color: #ff7657;
-    border-color: #ff7657;
 }
+
+h3{
+    color: #ffba5a;
+}
+
+nav{
+    background-color: #ffba5a;
+}
+
+/*acceuil*/
 
 .home-container{
     padding: 2% 5%;
@@ -77,19 +70,37 @@ header{
     padding: 3%;
 }
 
-h1, h2{
-    color: #ff7657;
+/*article*/
+
+.img-article{
+    max-width: 700px;
 }
 
-h3{
-    color: #ffba5a;
+/*quizz*/
+
+#quizz{
+    display: flex;
+    flex-direction: column;
 }
-nav{
-    background-color: #ffba5a;
+
+.reponse{
+    background-color: #fbeed7;
+    font-weight: 700;
+    color: #443b5f;
+    min-height: 70px;
+    border-radius: 30px;
+    border-color: #ffba5a;
+    flex : 1 1 0;
+    width: 20%;
+    min-width: 200px;
+    margin: auto;
+    margin-top: 2%;
+    padding : 10px 5px;
 }
-header{
-    background-color: #ff7657;
+
+.reponse:hover{
+    color: #ff7657;
+    border-color: #ff7657;
 }
-header > div > div > h1{
-    color: white;
-}
+
+
