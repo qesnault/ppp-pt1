@@ -11,6 +11,11 @@ a{
     color : rgb(141, 183, 211);
 }
 
+a:hover{
+    color : rgb(141, 183, 211);
+    text-decoration: underline;
+}
+
 header{
     width: 100%;
 }
