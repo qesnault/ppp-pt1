@@ -72,16 +72,14 @@ nav{
 
 /*article*/
 
-.img-article{
-    max-width: 700px;
-}
+
 
 .sommaire{
     border-width: 2px;
     border-style: solid;
     border-color: #ffba5a;
     border-radius: 20px;
-    margin: 1% 0%;
+    margin: 1% 1% 1% 1%;
 }
 
 
